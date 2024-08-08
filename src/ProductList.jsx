@@ -255,7 +255,7 @@ const handleContinueShopping = (e) => {
     dispatch(addItem(plant));
     setAddedToCart((prevState) => ({
         ...prevState,
-        [product.name]: true,
+        [plant.name]: true,
     }));
   };
     return (
