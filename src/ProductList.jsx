@@ -289,7 +289,7 @@ const handleContinueShopping = (e) => {
                                 <img className='product-image' src = {plant.image} alt={plant.name}/>
                                 <div className='product-title'>{plant.name}</div>
                                 <div className='product-title'>{plant.description}</div>
-                                <div className='product-price'>${plant.cost}</div>
+                                <div className='product-price'>{plant.cost}</div>
                                 <button className='product-button' onClick={()=>handleAddToCart(plant)}>Add To Cart</button>
                             </div>
                         ))}
