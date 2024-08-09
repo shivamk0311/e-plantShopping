@@ -290,7 +290,8 @@ const handleContinueShopping = (e) => {
                                 <div className='product-title'>{plant.name}</div>
                                 <div className='product-title'>{plant.description}</div>
                                 <div className='product-price'>{plant.cost}</div>
-                                <button className='product-button' onClick={()=>handleAddToCart(plant)} disabled={addedToCart[plant.name]}>{addedToCart[plant.name] ? "Added To Cart" : "Add To Cart"}</button>
+                                <button className='product-button' onClick={()=>handleAddToCart(plant)} disabled={addedToCart[plant.name]} style={{
+                backgroundColor: addedToCart[plant.name] ? 'grey' : '#4CAF50'}}>{addedToCart[plant.name] ? "Added To Cart" : "Add To Cart"}</button>
                             </div>
                         ))}
                     </div>
